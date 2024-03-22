@@ -61,13 +61,18 @@ const deleteItem= async (req, res) => {
 };
 
 
+const d = async (req, res) => {
+     
+    res.send("ffffffffffffffff");
+
+};
  
 
   
 
 
 
-module.exports={createItem,UpdateItem,GetAllData,OneItem,deleteItem};
+module.exports={createItem,UpdateItem,GetAllData,OneItem,deleteItem,d};
 
 
 //  try {
