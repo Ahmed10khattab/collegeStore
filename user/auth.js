@@ -39,6 +39,7 @@ const jwt=require('jsonwebtoken')
 
    login:async(req,res)=>{
 var user = await AUTH1.find({email:req.body.email});
+
 if(user.length<1){
     return res.json({massege:"this email not exist"});
 
