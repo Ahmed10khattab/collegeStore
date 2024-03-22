@@ -63,7 +63,7 @@ const deleteItem= async (req, res) => {
 
 const d = async (req, res) => {
      
-    res.send("ffffffffffffffff");
+    res.json({ message: 'Item deleted successfully' });
 
 };
  
