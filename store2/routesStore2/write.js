@@ -6,7 +6,7 @@ router.post('/CreatItem',createItem);
 router.put('/UpdateItem/:id',UpdateItem);
 router.get('/AllData',GetAllData);
 router.get('/OneItem/:id',OneItem)
-router.delete('/DeleteItem/:id',deleteItem);
+ router.delete('/DeleteItem/:id',deleteItem);
 
 
 
