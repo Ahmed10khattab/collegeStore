@@ -4,7 +4,8 @@ const notification=mongoose.Schema({
     nameItem:String,
     countItem:Number,
     message:String,
-    username:String
-},{timestamps:true});
+    username:String,
+    createdAt: { type: Date, default: Date.now }
+});
 
 module.exports=mongoose.model('notification',notification);
