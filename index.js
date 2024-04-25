@@ -12,7 +12,7 @@ const auth=require('./user/authRoute');
 const ink=require('./store2/routesStore2/ink');
 const publicate=require('./store2/routesStore2/publicate');
 const write=require('./store2/routesStore2/write');
-const clean=require('./store2/routesStore2/clean');
+ const clean=require('./store2/routesStore2/clean');
 
 
 
