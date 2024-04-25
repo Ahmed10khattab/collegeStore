@@ -12,7 +12,9 @@ const auth=require('./user/authRoute');
 const ink=require('./store2/routesStore2/ink');
 const publicate=require('./store2/routesStore2/publicate');
 const write=require('./store2/routesStore2/write');
- const clean=require('./store2/routesStore2/clean');
+const clean=require('./store2/routesStore2/clean');
+const custody=require('./store1/routesStore1/custody');
+
 
 
 
@@ -32,6 +34,12 @@ app.use('/clean',clean);
 app.use('/write',write);
 app.use('/publicate',publicate);
 app.use('/ink',ink);
+app.use('/custody',custody);
+
+app.get('/mm',(req,res)=>{
+    res.send('cccccc')
+})
+
 
 
 
