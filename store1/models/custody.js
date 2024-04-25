@@ -1,8 +1,8 @@
 const mongoose=require('mongoose');
 const { double } = require('webidl-conversions');
-const elect=mongoose.Schema({
-    nameItem:String,
-    countItem:Number,
+const custody=mongoose.Schema({
+    name:String,
+    amount:String,
 },{timestamps:true});
 
-module.exports=mongoose.model('Elctricity',elect);
+module.exports=mongoose.model('custody',custody);
