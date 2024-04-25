@@ -1,4 +1,4 @@
- const CustodyModel=require('../models/eletricty');
+ const CustodyModel=require('../models/custody');
 
 
 
