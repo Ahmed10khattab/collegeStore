@@ -9,7 +9,7 @@ router.get('/getOneUser/:id',getOneUser);
 router.put('/AddIremToUserCostdy/:id',addItemtoUserCostody);
 router.delete('/deleteUserCostdy/:id',deleteUserCostdy);
 router.delete('/deleteItemFromUserCostody/:CusId/:ItemId',deleteItemFromUserCostody);
-router.put('/custody/:custodyId/items/:itemId',updateItemInCustody);
+router.put('/updateCustody/:custodyId/items/:itemId',updateItemInCustody);
 
 
 
