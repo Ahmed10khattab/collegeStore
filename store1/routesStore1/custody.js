@@ -1,12 +1,18 @@
 const express =require('express');
 const router=express.Router();
- const { createItem, UpdateItem, GetAllData, OneItem, deleteItem } = require('../controller/custody');
+ const { createUserCostody,  GetAllUserCostody, getOneUser,deleteUserCostdy, updateUserData,updateItemInCustody,addItemtoUserCostody, deleteItemFromUserCostody, UpdateUserCostody } = require('../controller/custody');
  
-router.post('/CreatItem',createItem);
-router.put('/UpdateItem/:id',UpdateItem);
-router.get('/AllData',GetAllData);
-router.get('/OneItem/:id',OneItem);
-router.delete('/DeleteItem/:id',deleteItem);
+router.post('/createUserCostdy',createUserCostody);
+ router.get('/getAllUserCostody',GetAllUserCostody);
+ router.put('/updateUsercustody/:custodyId', updateUserData);
+router.get('/getOneUser/:id',getOneUser);
+router.put('/AddIremToUserCostdy/:id',addItemtoUserCostody);
+router.delete('/deleteUserCostdy/:id',deleteUserCostdy);
+router.delete('/deleteItemFromUserCostody/:CusId/:ItemId',deleteItemFromUserCostody);
+router.put('/custody/:custodyId/items/:itemId',updateItemInCustody);
+
+
+
  
 
 

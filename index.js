@@ -14,6 +14,7 @@ const publicate=require('./store2/routesStore2/publicate');
 const write=require('./store2/routesStore2/write');
 const clean=require('./store2/routesStore2/clean');
 const custody=require('./store1/routesStore1/custody');
+const CustodyModel=require('./store1/models/custody');
 
 
 
@@ -40,17 +41,29 @@ app.get('/mm',(req,res)=>{
     res.send('cccccc')
 })
 
+ 
+// mongo.connect('mongodb+srv://Admincollege:5iBoWy3hOzPsD9YZ@atlascluster.ytbxqwi.mongodb.net/CollegeStore?retryWrites=true&w=majority')
+// .then(()=>{console.log('connected mongoose successfull')},)
+// .catch((error)=>
+//     console.log(error)
+
+// )
 
 
 
 
-
-mongo.connect('mongodb+srv://Admincollege:qmHnMJj103IcUzEg@atlascluster.ytbxqwi.mongodb.net/CollegeStore?retryWrites=true&w=majority')
-.then(()=>{console.log('connected mongoose successfull')},)
+mongo.connect("mongodb://Admincollege:5iBoWy3hOzPsD9YZ@ac-pka8jeg-shard-00-00.ytbxqwi.mongodb.net:27017,ac-pka8jeg-shard-00-01.ytbxqwi.mongodb.net:27017,ac-pka8jeg-shard-00-02.ytbxqwi.mongodb.net:27017/?ssl=true&replicaSet=atlas-d5fq1b-shard-0&authSource=admin&retryWrites=true&w=majority&appName=AtlasCluster")
+ .then(()=>{console.log('connected mongoose successfull')},)
 .catch((error)=>
     console.log(error)
 
 )
+// mongo.connect("mongodb://localhost:27017/StoreCollage",
+// {
+//     useNewUrlParser: true,
+//      useUnifiedTopology: true
+//   }
 
+// )
 
 app.listen(port,()=>console.log('server is running') );
